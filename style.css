@@ -1,63 +1,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f5ee;
-    background-image: url("images/leaf-pattern.png");
-    background-repeat: repeat;
-    color: #243b2a;
-    margin: 0;
+    background-color: lightgray;
 }
 
-header {
-    background-color: #285943;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-nav {
-    background-color: #183d2b;
-    text-align: center;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-}
-
-nav a:hover {
-    color: #f4d58d;
-}
-
-nav a.active {
-    color: #f4d58d;
-    font-weight: bold;
-}
-
-main {
-    background-color: white;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 900px;
-}
-
-.places {
-    list-style-image: url("images/leaf-bullet.png");
-}
-
-.places li {
-    margin: 12px;
-}
-
-.places a {
-    color: #285943;
-}
-
-footer {
-    background-color: #183d2b;
-    color: white;
-    text-align: center;
-    padding: 15px;
+.card {
+    background-color: lightblue;
+    width: 400px;
+    padding: 10px 30px;
+    border: 3px solid navy;
+    box-sizing: border-box;
+    margin: 0 auto 24px auto;
 }
