@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+body {
+    background-color: #e8eef5;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    background-color: white;
+    margin: 0 auto;
+    width: 820px;
+}
+
+header {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: padding-box;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px black;
+}
+
+nav {
+    background-color: #23476b;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    margin: 15px;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: #23476b;
+}
+
+main {
+    padding: 25px;
+}
+
+h2 {
+    color: #23476b;
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+figure {
+    float: right;
+    margin: 10px 0 20px 20px;
+    text-align: center;
+    width: 220px;
+}
+
+figure img {
+    border: 2px solid #23476b;
+    border-radius: 8px;
+    height: 260px;
+    width: 200px;
+}
+
+figcaption {
+    font-size: 13px;
+    font-style: italic;
+}
+
+blockquote {
+    background-color: #e8eef5;
+    border-left: 5px solid #23476b;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+    font-size: 20px;
+    font-style: italic;
+    margin: 20px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #23476b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
