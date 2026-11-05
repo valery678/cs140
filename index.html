@@ -1,140 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tech Blog – Flexbox Activity</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Places in Malaysia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ============================
-       NAVBAR
-       Your job: make the logo sit
-       on the LEFT and the nav links
-       sit on the RIGHT using flexbox.
-  ============================= -->
-  <nav class="navbar">
-    <div class="logo">TechBlog</div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Articles</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+    <header>
+        <h1>My Favorite Places in Malaysia</h1>
+    </header>
 
-  <!-- ============================
-       HERO / PAGE HEADER
-       (already styled for you)
-  ============================= -->
-  <header class="hero">
-    <h1>Welcome to TechBlog</h1>
-    <p>Your daily dose of web development tips and tutorials.</p>
-  </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Places</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
 
-  <!-- ============================
-       CARD SECTION
-       Your job: lay the three cards
-       out SIDE BY SIDE with even
-       spacing using flexbox.
-  ============================= -->
-  <main class="card-section">
+    <div class="layout">
 
-    <!-- TASK 8: make this card "featured"
-         so it grows wider than the others -->
-    <article class="card card-featured">
-      <div class="card-img img-featured"></div>
-      <div class="card-body">
-        <span class="tag">Featured</span>
-        <h2>A Complete Guide to CSS Flexbox</h2>
-        <p>Flexbox is one of the most powerful layout tools in CSS. In this deep-dive we cover every property from flex-direction to align-self, with real-world examples you can use today.</p>
-        <a href="#" class="btn">Read More</a>
-      </div>
-    </article>
+        <aside>
+            <h2>About Malaysia</h2>
+            <p>
+                Malaysia is my home country.
+                I chose these places because
+                they are beautiful and have
+                different cultures, foods,
+                and attractions.
+            </p>
+        </aside>
 
-    <article class="card">
-      <div class="card-img img-2"></div>
-      <div class="card-body">
-        <span class="tag">Tutorial</span>
-        <h2>Getting Started with VS Code</h2>
-        <p>Set up the perfect web development environment with these essential extensions and settings for beginners.</p>
-        <a href="#" class="btn">Read More</a>
-      </div>
-    </article>
+        <main>
+            <h2>My Favorite Places</h2>
 
-    <article class="card">
-      <div class="card-img img-3"></div>
-      <div class="card-body">
-        <span class="tag">Tips</span>
-        <h2>10 HTML Best Practices</h2>
-        <p>Write cleaner, more accessible HTML from day one. These habits will save you hours of debugging later.</p>
-        <a href="#" class="btn">Read More</a>
-      </div>
-    </article>
+            <div class="cards">
 
-  </main>
+                <article>
+                    <img src="images/miri.jpg" alt="Miri">
+                    <h3>Miri</h3>
+                    <p>Miri is my hometown. I love the beaches and sunsets.</p>
+                </article>
 
-  <!-- ============================
-       TAGS / TOPIC ROW
-       TASK 9: These topic tags should
-       wrap onto multiple lines when
-       there are too many to fit in
-       one row. Right now they overflow!
-       Hint: one property controls
-       whether flex items can wrap.
-  ============================= -->
-  <section class="topics">
-    <h3 class="topics-heading">Browse by Topic</h3>
-    <div class="tag-row">
-      <span class="topic-tag">HTML</span>
-      <span class="topic-tag">CSS</span>
-      <span class="topic-tag">JavaScript</span>
-      <span class="topic-tag">Flexbox</span>
-      <span class="topic-tag">Grid</span>
-      <span class="topic-tag">Responsive Design</span>
-      <span class="topic-tag">VS Code</span>
-      <span class="topic-tag">Accessibility</span>
-      <span class="topic-tag">Git &amp; GitHub</span>
-      <span class="topic-tag">Web Performance</span>
-      <span class="topic-tag">Typography</span>
-      <span class="topic-tag">Color Theory</span>
+                <article>
+                    <img src="images/kuching.jpg" alt="Kuching">
+                    <h3>Kuching</h3>
+                    <p>I like Kuching because of its food and culture.</p>
+                </article>
+
+                <article>
+                    <img src="images/mulu.jpg" alt="Mulu">
+                    <h3>Mulu</h3>
+                    <p>Mulu has beautiful caves and rainforests.</p>
+                </article>
+
+                <article>
+                    <img src="images/kk.jpg" alt="Kota Kinabalu">
+                    <h3>Kota Kinabalu</h3>
+                    <p>I love the islands and mountains in Sabah.</p>
+                </article>
+
+                <article>
+                    <img src="images/kl.jpg" alt="Kuala Lumpur">
+                    <h3>Kuala Lumpur</h3>
+                    <p>Kuala Lumpur has tall buildings and many attractions.</p>
+                </article>
+
+                <article>
+                    <img src="images/penang.jpg" alt="Penang">
+                    <h3>Penang</h3>
+                    <p>Penang is famous for its food and historical places.</p>
+                </article>
+
+            </div>
+        </main>
+
     </div>
-  </section>
-
-  <!-- ============================
-       AUTHOR CARD
-       TASK 10: The author card contains
-       an avatar, a text block, and a
-       button. They should stack
-       VERTICALLY (column), not
-       side by side.
-       Hint: flex-direction has a value
-       for this.
-
-       TASK 11: The "Follow" button
-       should align itself to the RIGHT
-       edge of the card, even though
-       everything else is left-aligned.
-       Hint: only ONE item should move —
-       use a property applied to the
-       button itself, not the container.
-  ============================= -->
-  <section class="author-section">
-    <h3 class="author-heading">About the Author</h3>
-    <div class="author-card">
-      <div class="author-avatar"></div>
-      <div class="author-info">
-        <h4>Alex Rivera</h4>
-        <p>Senior web developer and educator with 10 years of experience teaching front-end fundamentals. Passionate about making CSS less scary for beginners.</p>
-      </div>
-      <a href="#" class="btn btn-follow">Follow</a>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>TechBlog &copy; 2025 — Built with HTML &amp; CSS Flexbox</p>
-  </footer>
 
 </body>
 </html>
