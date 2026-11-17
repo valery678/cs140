@@ -1,66 +1,94 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f8ff;
-    color: #333333;
-    font-size: 16px;
-    margin: 20px;
+    font-family: Arial;
+    background-color: #21162e;
+    color: white;
+    margin: 0;
 }
 
 header {
-    background-color: teal;
-    color: white;
-    padding: 20px;
+    background-color: purple;
     text-align: center;
+    padding: 20px;
 }
 
 nav {
-    background-color: #dddddd;
-    padding: 15px;
+    background-color: #39234d;
     text-align: center;
+    padding: 15px;
 }
 
 nav a {
-    margin: 15px;
+    color: white;
+    margin: 10px;
 }
 
-a:visited {
-    color: purple;
-}
-
-a:hover {
-    color: orange;
+.container {
+    display: flex;
 }
 
 main {
+    flex: 3;
+    padding: 20px;
+    min-width: 0;
+}
+
+aside {
+    flex: 1;
+    background-color: #39234d;
     padding: 20px;
 }
 
-h2, h3 {
-    color: teal;
+aside a {
+    color: pink;
 }
 
-.emphasis {
-    color: teal;
+h2 {
+    color: pink;
 }
 
-.muted {
-    color: gray;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-span {
-    color: teal;
+caption {
+    color: pink;
+    padding: 10px;
     font-weight: bold;
 }
 
-#top {
-    line-height: 1.6;
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: purple;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #39234d;
 }
 
 footer {
-    background-color: #dddddd;
-    padding: 15px;
+    background-color: purple;
     text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 700px) {
+    nav a {
+        display: block;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    th, td {
+        padding: 5px;
+        font-size: 12px;
+    }
 }
